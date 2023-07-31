@@ -214,6 +214,7 @@ function BookPage({ params }: BookPageProps) {
         <div className="relative">
           <div className="bookProposition">Livres similaires...</div>
           <Image
+            priority
             className="absolute left-[331px] top-[52px] z-z2 h-9 w-1/2"
             src={Decoration2}
             alt="background decoration"
