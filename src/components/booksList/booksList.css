@@ -1,0 +1,148 @@
+.bookContainer {
+  display: flex;
+  padding: 50px 60px 70px;
+  background-color: #fff;
+  border-radius: 0px 0px 7px 7px;
+  z-index: 1;
+  position: relative;
+}
+
+.bookGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 70px;
+  margin: 0 auto auto;
+  width: 100%;
+}
+
+.bookCard {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 16px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  /* V2 */
+  display: block;
+}
+
+.bookCardImage {
+  border-radius: 4px;
+  height: auto !important;
+  width: 100% !important;
+  margin-bottom: 12px;
+  object-fit: cover;
+}
+
+.bookCardTitle {
+  color: #2c1810;
+  font-family: Libre Baskerville;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 8px;
+  padding-right: 10px;
+}
+
+.bookCardDescription {
+  color: #796157;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+
+.bookCardRatings {
+  display: flex;
+  gap: 3px;
+  justify-self: center;
+  align-items: center;
+  margin: 0px 0 15px;
+}
+
+/* version 2 */
+@media (max-width: 800px) {
+  .bookGrid {
+    /* grid-template-columns: 1fr 1fr; */
+  }
+}
+
+/* version 1 */
+/* mobile */
+@media (max-width: 680px) {
+  .bookCardImage {
+    margin-bottom: 0px;
+  }
+
+  .bookGrid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .bookCardRatings {
+    margin: 20px 0 15px;
+  }
+
+  .bookCard {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 16px;
+    width: 85%;
+    height: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: auto;
+  }
+
+  .bookGrid {
+    row-gap: 16px;
+  }
+
+  .bookContainer {
+    padding: 30px 20px 48px;
+  }
+}
+
+@media (max-width: 470px) {
+  .bookCard {
+    width: 100%;
+  }
+
+  .bookCardRatings {
+    margin: 0px 0 15px;
+  }
+}
+
+/* version 1 */
+@media (min-width: 1100px) {
+  .bookGrid {
+    /* grid-template-columns: 1fr 1fr; */
+  }
+
+  .bookCardRatings {
+    margin: 0px 0 15px;
+  }
+
+  .bookCardImage {
+    border-radius: 4px;
+    height: auto !important;
+    width: 100% !important;
+  }
+  .bookCard {
+    display: grid;
+    gap: 16px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1150px) {
+  .bookCardRatings {
+    margin: 20px 0 15px;
+  }
+}

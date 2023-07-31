@@ -1,0 +1,17 @@
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 11vh;
+  padding: 0 48px;
+}
+
+@media (max-width: 680px) {
+  .navContainer {
+    flex-direction: column;
+    padding: 20px 0 20px;
+    gap: 20px;
+    height: auto;
+    z-index: 2;
+    background-color: white;
+  }
+}

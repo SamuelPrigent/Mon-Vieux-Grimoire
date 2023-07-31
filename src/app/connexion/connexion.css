@@ -1,0 +1,123 @@
+.SignIn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Notification {
+  width: 40%;
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+
+.Notification.Error p {
+  background-color: rgba(255, 0, 15, 0.24);
+  border-color: #d70000;
+}
+.Notification p {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 50px;
+  background-color: #f9f3ee;
+  border: solid 2px #d9a963;
+}
+.Form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  background: var(--background, #f9f3ee);
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.06);
+}
+
+.Form {
+  background-color: #f9f3ee;
+  width: 490px;
+  margin: auto;
+  padding: 50px;
+  align-items: center;
+  margin-block: 50px;
+}
+.Form,
+.Form label {
+  display: flex;
+  flex-direction: column;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #2c1810;
+  font-weight: 300;
+}
+
+.Form input[type="file"] {
+  display: none;
+}
+
+.Form label {
+  width: 100%;
+}
+.Form label p {
+  margin-bottom: 12px;
+  padding-left: 2px;
+}
+
+.form-inputs {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+  height: 55px;
+  border-radius: 3px;
+  border: 1px solid #f2e3ce;
+  background: #fff;
+  padding: 0 16px;
+}
+
+.Submit {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 6px;
+}
+
+.Submit > :nth-child(2) {
+  font-weight: 400;
+}
+
+@media all and (max-width: 950px) {
+  .Form {
+    width: 70%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .Submit {
+    flex-direction: column;
+  }
+  .Submit span {
+    margin-block: 20px;
+  }
+}
+
+.signin-button {
+  color: #2c1810;
+  background-color: #d9a963 !important;
+  text-decoration: none;
+  padding: 18px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  transition: 0.1s;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.signin-button:hover {
+  text-decoration: none;
+  background-color: #b99056 !important;
+  color: #fff;
+  transition: 0.1s;
+}
+
+.mvgLogo {
+  height: 40px;
+}

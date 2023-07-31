@@ -1,0 +1,146 @@
+.Form {
+  width: 495px;
+  margin: auto;
+  padding: 50px;
+  align-items: center;
+  margin-block: 50px;
+  border-radius: 12px;
+  background: #f9f3ee;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.06);
+}
+.Form,
+.Form label {
+  display: flex;
+  flex-direction: column;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #2c1810;
+  font-weight: 300;
+}
+
+.Form input[type="file"] {
+  display: none;
+}
+
+.Form label {
+  width: 100%;
+}
+.Form label p {
+  margin-bottom: 12px;
+}
+
+.form-inputs {
+  height: 55px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  padding: 0 16px;
+  border: 1px solid #f2e3ce;
+  border-radius: 3px;
+  background: #fff;
+}
+/* ??
+.Stars,
+.Stars label {
+  display: flex;
+  flex: 1;
+  margin-bottom: 22px;
+  width: 50%;
+  align-items: center;
+}
+
+.Stars input {
+  position: absolute;
+  left: -10000px;
+} */
+
+.AddImage {
+  display: flex;
+  align-items: center;
+  padding: 43px 81px;
+  margin-bottom: 40px;
+  border-radius: 3px;
+  border: 1px dashed #f2e3ce;
+  background: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.AddImage img {
+  margin-right: 20px;
+  height: 57px;
+  width: 57px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.AddImage div {
+  color: #929292;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+@media all and (max-width: 950px) {
+  .Form {
+    width: 70%;
+  }
+}
+
+.add-button {
+  color: #2c1810;
+  background-color: #d9a963 !important;
+  text-decoration: none;
+  padding: 18px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  transition: 0.1s;
+  cursor: pointer;
+  white-space: nowrap;
+  min-width: 100px;
+}
+
+.add-button:hover {
+  text-decoration: none;
+  background-color: #b99056 !important;
+  color: #fff;
+  transition: 0.1s;
+}
+
+/* RATING radio button -- book form */
+.rating--addBook:not(:checked) > input {
+  position: absolute;
+  appearance: none;
+}
+
+.rating--addBook:not(:checked) > label {
+  float: right;
+  cursor: pointer;
+  font-size: 30px;
+  color: #f2e2ce;
+  width: 35px;
+  height: 35px;
+}
+
+.rating--addBook:not(:checked) > label:before {
+  content: "★";
+}
+
+.rating--addBook > input:checked + label:hover,
+.rating--addBook > input:checked + label:hover ~ label,
+.rating--addBook > input:checked ~ label:hover,
+.rating--addBook > input:checked ~ label:hover ~ label,
+.rating--addBook > label:hover ~ input:checked ~ label {
+  color: #b99056;
+}
+
+.rating--addBook:not(:checked) > label:hover,
+.rating--addBook:not(:checked) > label:hover ~ label {
+  color: #daa962;
+}
+
+.rating--addBook > input:checked ~ label {
+  color: #daa962;
+}
